@@ -1,4 +1,4 @@
-nclude <stdio.h>
+include <stdio.h>
 /**
  * main - Write a C program that prints the size of various types on the computer
  * Return: Always 0 (Success)
