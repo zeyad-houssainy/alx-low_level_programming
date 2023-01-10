@@ -9,3 +9,23 @@
 *pointer to array if everything is normal.
 */
 
+char *create_array(unsigned int size, char c)
+{
+    char *array;
+    unsigned int x;
+    
+    if (size == 0)
+    {
+        return(NULL);
+    }
+    array = malloc(sizeof(char)*size);
+    if (array == NULL)
+    {
+        return(NULL);
+    }
+    for (x=0 ; x<size ; x++)
+    {
+        c = array[x];
+    }
+    return(array);
+}
