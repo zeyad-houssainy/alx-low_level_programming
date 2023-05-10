@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -8,17 +9,14 @@
  */
 int _putchar(char c);
 
- int main(void)
+void print_alphabet(void)
 {
-	char temp[] = "_putchar";
-	int i;
+	char letter = 'a';
 
-	for (i = 0; i < 8; ++i)
+	for (letter; letter <= 'z'; ++letter)
 	{
-		_putchar(temp[i]);
+		_putchar(letter);
 	}
-	_putchar(10);
-	return(0);
 }
 
 
