@@ -16,7 +16,7 @@
 		_putchar(word[i]);
 	}
 
-	putchar('\n');
+	_putchar(10);
  	return (0);
  }
 
