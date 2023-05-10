@@ -1,23 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - Prints the alphabet in reverse.
- *
- * Return: Always 0.
- */
+*main - function prints text as output
+*
+*Return:return 0
+*/
 
- int main(void)
- {
- 	char word[] = "_putchar";
- 	int i = 0;
+int main(void)
+{
+	char temp[] = "_putchar";
+	int i;
 
-	for (i; word[i] != '\0' ; ++i)
+	for (i=0; i<8; ++i)
 	{
-		_putchar(word[i]);
+		_putchar(temp[i]);
 	}
-
-	putchar('\n');
-
- 	return (0);
- }
+	_putchar(10);
+	return(0);
+}
 
