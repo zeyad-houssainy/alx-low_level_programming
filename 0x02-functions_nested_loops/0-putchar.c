@@ -11,12 +11,13 @@
  	char word[] = "_putchar";
  	int i = 0;
 
- 	for (i; i<=10; ++i)
+ /*	for (i; i<=10; ++i)
 	{
 		_putchar(word[i]);
 	}
 
-	_putchar('\n');
+	_putchar('\n');*/
+
  	return (0);
  }
 
