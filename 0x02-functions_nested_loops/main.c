@@ -8,7 +8,8 @@ int _putchar(char c)
 
 int main()
 {
-	print_alphabet();
+	//Enter the function here
+	print_alphabet_x10();
 }
 
 //##############################################
@@ -17,18 +18,18 @@ int main()
 //testing file
 // Enter your code below
 
-
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char letter = 'a';
+	int count;
+	char letter;
 
-	for (letter; letter <= 'z'; ++letter)
+	for (count = 0; count<10; ++count)
 	{
-		_putchar(letter);
+		for (letter = 'a'; letter <= 'z'; ++letter)
+		{
+			_putchar(letter);
+		}
 	}
-
-	return (0);
+	_putchar (10);
 }
-
-
 
