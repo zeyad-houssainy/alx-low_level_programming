@@ -18,7 +18,7 @@ int main()
 //testing file
 // Enter your code below
 
-void print_alphabet_x10()
+void print_alphabet_x10(void)
 {
 	int count;
 	char letter;
