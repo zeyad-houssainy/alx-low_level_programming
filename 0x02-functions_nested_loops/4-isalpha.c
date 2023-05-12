@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *function that checks for alphabetic character
-*@c: character to be verified
+*c: character to be verified
 *Return: return 0 or 1
 */
 
