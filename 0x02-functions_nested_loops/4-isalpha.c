@@ -5,7 +5,7 @@
 *Return: return 0 or 1
 */
 
-int _isalpha(int c)
+int test_isalpha(int c)
 {
 	if (c >= 'A' && c <= 'z')
 		return (1);
