@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 *print_sign-prints sign of a number
 *@n: character to be verified
@@ -22,16 +23,4 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-}
-
-int main(void)
-{
-	int r;
-
-	r = print_sign(98);
-	if (r < 0)
-		r *= -1;
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
 }
