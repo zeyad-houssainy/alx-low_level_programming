@@ -1,4 +1,4 @@
-/*
+
 #include <stdio.h>
 #include "main.h"
 int _putchar(char c);
@@ -7,11 +7,24 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-int main()
+int main(void)
 {
-	//Enter the function here
-	print_alphabet_x10();
+	int letter;
+
+	for (letter = 'a'; letter <= 'z'; ++letter)
+	{
+		printf("%d .. %c\n", letter, letter);
+	}
+	for (letter = 'A'; letter <= 'Z'; ++letter)
+	{
+		printf("%d .. %c\n", letter, letter);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
+
 
 //##############################################
 //##############################################
@@ -19,19 +32,3 @@ int main()
 //testing file
 // Enter your code below
 
-void print_alphabet_x10(void)
-{
-	int count;
-	char letter;
-
-	for (count = 0; count<10; ++count)
-	{
-		for (letter = 'a'; letter <= 'z'; ++letter)
-		{
-			_putchar(letter);
-		}
-		_putchar (10);
-	}
-
-}
-*/
