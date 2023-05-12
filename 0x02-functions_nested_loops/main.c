@@ -9,23 +9,14 @@ int _putchar(char c)
 
 int main(void)
 {
-	int letter;
-
-	for (letter = 'a'; letter <= 'z'; ++letter)
+	if (n > 0)
 	{
-		printf("%d .. %c\n", letter, letter);
-	}
-	for (letter = 'A'; letter <= 'Z'; ++letter)
-	{
-		printf("%d .. %c\n", letter, letter);
+		_putchar('+');
+		_putchar(n);
+		_putchar(10);
 	}
 
-	putchar('\n');
-
-	return (0);
 }
-
-
 //##############################################
 //##############################################
 //##############################################
