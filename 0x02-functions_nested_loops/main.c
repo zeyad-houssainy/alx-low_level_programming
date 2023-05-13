@@ -9,33 +9,23 @@ int _putchar(char c)
 
 int main(void)
 {
-	int x;
-	int y;
-	int temp;
-
-	for (x = 0; x < 10; x++)
+	int count;
+	int n = 120;
+	if (n < 98)
 	{
-		_putchar('0');
-		for (y = 1; y < 10; y++)
+		for (n + 1 ; n < 98; n++)
 		{
-			temp = x * y;
-			if (temp < 10)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(temp + '0');
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar((temp / 10) + '0');
-				_putchar((temp % 10) + '0');
-			}
+			printf("%d, ", n);
 		}
-		_putchar(10);
 	}
+	else if (n > 98)
+	{
+		for (n + 1; n > 98; n--)
+		{
+			printf("%d, ", n);
+		}
+	}
+	printf("%d", n);
 }
 
 
