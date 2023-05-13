@@ -1,13 +1,11 @@
-
-#include <stdio.h>
 #include "main.h"
-int _putchar(char c);
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 
-int main(void)
+ void times_table(void)
  {
  	int x;
  	int y;
@@ -43,11 +41,3 @@ int main(void)
 		_putchar(10);
 	}
  }
-
-
-//##############################################
-//##############################################
-//##############################################
-//testing file
-// Enter your code below
-
