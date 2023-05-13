@@ -1,22 +1,22 @@
 #include "main.h"
 /**
  * main - check the code
- *
- * Return: Always 0.
+ *@n: character to be verified
+ * Return: absolute value.
  */
 
 int _abs(int i)
 {
 	if (i > 0)
 	{
-		return(i);
+		return (i);
 	}
 	else if (i < 0)
 	{
-		return(-i);
+		return (-i);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
