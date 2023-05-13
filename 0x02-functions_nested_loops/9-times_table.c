@@ -32,7 +32,6 @@ void times_table(void)
 				_putchar((temp % 10) + '0');
 			}
 		}
-		_putchar('$');
 		_putchar(10);
 	}
 }
