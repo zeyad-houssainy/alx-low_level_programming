@@ -34,7 +34,6 @@ int main(void)
 				_putchar((temp % 10) + '0');
 			}
 		}
-		_putchar('$');
 		_putchar(10);
 	}
 }
