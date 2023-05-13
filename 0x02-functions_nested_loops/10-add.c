@@ -1,11 +1,14 @@
 #include "main.h"
 /**
-*times_table - prints the 9 times table
+*adds two integers and returns the result
+*
+*@a: first number
+*@b: second number
 *
 *Return: returns nothing
 */
 
-void times_table(void)
+int add(int a, int b)
 {
-
+	return (a + b);
 }
