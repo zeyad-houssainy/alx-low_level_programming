@@ -9,8 +9,20 @@ int _putchar(char c)
 
 int main(void)
 {
-	int i = -7896 % 10;
-	printf("%d", i);
+	int min, hour;
+	for (hour = 0; hour < 24; hour++)
+	{
+		for (min = 0; min < 60; min++)
+		{
+			putchar((hour / 10) + '0');
+			putchar((hour % 10) + '0');
+			putchar(':');
+			putchar((min / 10) + '0');
+			putchar((min % 10) + '0');
+			putchar('\n');
+
+		}
+	}
 }
 
 
