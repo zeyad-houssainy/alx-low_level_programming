@@ -22,14 +22,14 @@ int main(void)
 			if (temp < 10)
 			{
 				_putchar(',');
-				_putchar('.');
-				_putchar('.');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(temp + '0');
 			}
 			else
 			{
 				_putchar(',');
-				_putchar('.');
+				_putchar(' ');
 				_putchar((temp / 10) + '0');
 				_putchar((temp % 10) + '0');
 			}
