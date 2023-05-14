@@ -9,8 +9,6 @@
 
 void print_to_98(int n)
 {
-	int count = ;
-
 	if (n > 98)
 	{
 		for (n - 1; n <= 98; n--)
