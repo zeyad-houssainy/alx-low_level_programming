@@ -11,23 +11,23 @@ int main(void)
 {
 	int y, x;
 	int temp;
-	int n = 3;
+	int n = 2;
  	for (x = 0; x <= n; x++)
 	{
 		_putchar('0');
-		for (y = 0; y <= n; y++)
+		for (y = 1; y <= n; y++)
 		{
 			temp = x * y;
 			if (temp < 10)
 			{
-				_putchar('.');
-				_putchar('.');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(',');
 				_putchar(temp + '0');
 			}
 			else
 			{
-				_putchar('.');
+				_putchar(' ');
 				_putchar(',');
 				_putchar((temp / 10) + '0');
 				_putchar((temp % 10) + '0');
