@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main -  prints the first 50 Fibonacci numbers
 * @void: void
@@ -17,15 +18,15 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
+
 		if (count != 49)
 		{
-			printf("%d, ", sum);
+			printf("%d, ", abs(sum));
 		}
 		else
 		{
-			printf("%d\n", sum);
+			printf("%d\n", abs(sum));
 		}
-
 	}
 
 	return (0);
