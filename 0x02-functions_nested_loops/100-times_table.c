@@ -8,7 +8,6 @@ void print_times_table(int n)
 {
 	int y, x;
 	int temp;
-	int n = 3;
  	for (x = 0; x <= n; x++)
 	{
 		_putchar('0');
