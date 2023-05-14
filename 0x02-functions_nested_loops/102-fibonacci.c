@@ -13,13 +13,14 @@ int main(void)
 	int sum = 0;
 	int count = 0;
 
-	for (; count < 50; count++)
+
+
+	for (; count < 48; count++)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
-
-		if (count != 49)
+		if (count != 47)
 		{
 			printf("%d, ", abs(sum));
 		}
