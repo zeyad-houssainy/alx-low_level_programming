@@ -1,21 +1,60 @@
+
 #include <stdio.h>
-/**
- * main - prints the sum of all the multiples of 3 or 5 below 1024
- * @void: void
- * Return: 0 Success
- */
+#include "main.h"
+int _putchar(char c);
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
 int main(void)
 {
-	int n;
-	int sum = 0;
-
-	for (n = 0; n < 1024; n++)
+	int y, x;
+	int temp;
+	int n = 0;
+	if (n <= 15 && n >= 0)
 	{
-		if (n % 3 == 0 || n % 5 == 0)
+		for (x = 0; x <= n; x++)
 		{
-			sum += n;
+
+			_putchar('0');
+			for (y = 1; y <= n; y++)
+			{
+				temp = x * y;
+				if (temp < 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(temp + '0');
+				}
+				else if (temp < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((temp / 10) + '0');
+					_putchar((temp % 10) + '0');
+				}
+				else if (temp >= 100 && temp < 1000)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((temp / 100) + '0');
+					_putchar(((temp / 10) % 10) + '0');
+					_putchar((temp % 10) + '0');
+				}
+			}
+			_putchar (10);
 		}
 	}
-	printf("%d\n", sum);
-	return (0);
 }
+
+
+//##############################################
+//##############################################
+//##############################################
+//testing file
+// Enter your code below
+
