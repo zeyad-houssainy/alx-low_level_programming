@@ -17,7 +17,15 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf("%d, \n", sum);
+		if (count != 49)
+		{
+			printf("%d, ", sum);
+		}
+		else
+		{
+			printf("%d\n", sum);
+		}
+
 	}
 
 	return (0);
