@@ -20,14 +20,15 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		if (count != 47)
+		printf("%d, ", abs(sum));
+		/*if (count != 48)
 		{
 			printf("%d, ", abs(sum));
 		}
 		else
 		{
 			printf("%d\n", abs(sum));
-		}
+		}*/
 	}
 
 	return (0);
