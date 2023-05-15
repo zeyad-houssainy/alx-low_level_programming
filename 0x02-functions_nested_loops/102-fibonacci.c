@@ -14,7 +14,7 @@ int main(void)
 	int count = 0;
 
 
-
+	printf("%d, %d, ", a, b);
 	for (; count < 48; count++)
 	{
 		sum = a + b;
