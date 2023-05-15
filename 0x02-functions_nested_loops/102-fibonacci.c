@@ -10,7 +10,7 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
-	long int sum = 0;
+	int sum = 0;
 	int count = 0;
 
 
