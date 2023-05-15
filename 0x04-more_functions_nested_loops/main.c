@@ -9,13 +9,21 @@ int _putchar(char c)
 
 int main(void)
 {
-	int c = 'a';
-	for (; c < 'z'; c++)
-	{
-		printf("%c\n", c);
-	}
+    char c;
 
+    c = 'A';
+    printf("%c: %d\n", c, _isupper(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isupper(c));
+    return (0);
+}
 
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	if (c >= 'a' && c <= 'z')
+		return (0);
 }
 
 
