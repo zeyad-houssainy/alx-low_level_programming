@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	long int a = 1;
-	long int b = 2;
+	int a = 1;
+	int b = 2;
 	long int sum = 0;
 	int count = 0;
 
@@ -20,7 +20,7 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf("%d, ", abs(sum));
+		printf("%ld, ", abs(sum));
 		/*if (count != 48)
 		{
 			printf("%d, ", abs(sum));
