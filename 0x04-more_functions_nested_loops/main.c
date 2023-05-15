@@ -9,6 +9,12 @@ int _putchar(char c)
 
 int main(void)
 {
+	int c = 'a';
+	for (; c < 'z'; c++)
+	{
+		printf("%c\n", c);
+	}
+
 
 }
 
