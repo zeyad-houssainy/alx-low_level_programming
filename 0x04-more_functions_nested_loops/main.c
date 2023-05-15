@@ -7,29 +7,24 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+// Enter Code from Terminal here:
 int main(void)
 {
     char c;
 
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
+    c = '0';
+    printf("%c: %d\n", c, _isdigit(c));
     c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
+    printf("%c: %d\n", c, _isdigit(c));
     return (0);
 }
 
-int _isupper(int c)
+// Enter function here:
+int _isdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c = 48 && c <= 57)
 		return (1);
-	if (c >= 'a' && c <= 'z')
+	else
 		return (0);
 }
-
-
-//##############################################
-//##############################################
-//##############################################
-//testing file
-// Enter your code below
 
