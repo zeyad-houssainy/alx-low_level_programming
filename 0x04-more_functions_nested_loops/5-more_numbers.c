@@ -1,19 +1,11 @@
-#include <stdio.h>
 #include "main.h"
-int _putchar(char c);
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/**
+*more_numbers - prints the numbers 10 times, from 0 to 14
+*
+*
+*Return: returns nothing
+*/
 
-// Enter Code from Terminal here:
-int main(void)
-{
-    more_numbers();
-    return (0);
-}
-
-// Enter function here:
 void more_numbers(void)
 {
 	int a, b;
@@ -32,4 +24,3 @@ void more_numbers(void)
 		_putchar(10);
 	}
 }
-
