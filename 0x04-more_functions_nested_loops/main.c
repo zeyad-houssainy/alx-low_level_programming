@@ -9,28 +9,27 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    print_diagonal(0);
-    print_diagonal(2);
-    print_diagonal(10);
-    print_diagonal(-4);
-    return (0);
+    print_square(2);
+    print_square(10);
+    //print_square(0);
+    //return (0);
 }
 
 // Enter function here:
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int count, spaces;
+	int x, y;
 
-	if (n > 0)
+	if (size > 0)
 	{
-		for (count = 0; count < n; count++)
+		for (y = 0; y < size; y++)
 		{
-			for (spaces = 0; spaces < count; spaces++)
+			//_putchar('#');
+			for (x = 0; x < size; x++)
 			{
-				_putchar(' ');
+				_putchar('#');
 			}
-			_putchar('\\');
-			_putchar('\n');
+		_putchar('\n');
 		}
 	}
 	else
@@ -38,4 +37,3 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 }
-
