@@ -16,14 +16,15 @@ int main(void)
 // Enter function here:
 void print_most_numbers(void)
 {
-	char i;
-	int temp;
+	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		temp = i + '0';
-		if ((i != '2') || (i != '4'))
-			_putchar(temp);
+		if ((i == 50) || (i == 52))
+		{
+			continue;
+		}
+		_putchar(i);
 	}
 	_putchar(10);
 }
