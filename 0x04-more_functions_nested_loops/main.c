@@ -9,34 +9,30 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    print_diagonal(0);
-    print_diagonal(2);
-    print_diagonal(10);
-    print_diagonal(-4);
+    print_line(0);
+    print_line(2);
+    print_line(10);
+    print_line(-4);
     return (0);
 }
 
 // Enter function here:
-void print_diagonal(int n)
+void print_line(int n)
 {
-	int count, spaces;
+	int count;
 
 	if (n > 0)
 	{
-		for (count = 0;count < n; count++)
+		for (count = 0  ;count <= n; count++)
 		{
-			for (spaces = 0  ;spaces <= count; spaces++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\\');
-			_putchar(10);
+			_putchar('_');
 		}
+		_putchar('\\');
+		_putchar(10);
 	}
 	else
 	{
 		_putchar(10);
 	}
-
 }
 
