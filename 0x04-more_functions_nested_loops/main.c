@@ -9,18 +9,21 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    print_numbers();
+    print_most_numbers();
     return (0);
 }
 
 // Enter function here:
-void print_numbers(void)
+void print_most_numbers(void)
 {
-	int i;
+	char i;
+	int temp;
+
 	for (i = 0; i < 10; i++)
 	{
-
-		_putchar(i+'0');
+		temp = i + '0';
+		if ((i != '2') || (i != '4'))
+			_putchar(temp);
 	}
 	_putchar(10);
 }
