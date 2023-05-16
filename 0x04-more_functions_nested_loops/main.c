@@ -9,27 +9,27 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    more_numbers();
+    //print_diagonal(0);
+    //print_diagonal(2);
+    print_diagonal(10);
+    //print_diagonal(-4);
     return (0);
 }
 
 // Enter function here:
-void more_numbers(void)
+void print_diagonal(int n)
 {
-	int a, b;
-	a = 0;
-
-	for (a = 0; a < 10; a++)
+	int count, spaces;
+	for (count = 0;count <= n; count++)
 	{
-		for (b = 0; b <= 14; b++)
+		for (spaces = 0  ;spaces <= count; spaces++)
 		{
-			if (b > 9)
-			{
-				_putchar((b / 10) + '0');
-			}
-			_putchar((b % 10) + '0');
+			_putchar(' ');
 		}
+		_putchar('\\');
 		_putchar(10);
 	}
+
+
 }
 
