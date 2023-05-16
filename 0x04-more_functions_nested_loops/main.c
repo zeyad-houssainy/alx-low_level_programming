@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include "main.h"
 int _putchar(char c);
@@ -10,17 +9,19 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
+    print_numbers();
     return (0);
 }
 
 // Enter function here:
-int _isdigit(int c)
+void print_numbers(void)
 {
-	if ((c >= 48) && (c <= 57))
-		return (1);
-	else
-		return (0);
+	int i;
+	for (i = 0; i < 10; i++)
+	{
+
+		_putchar(i+'0');
+	}
+	_putchar(10);
 }
 
