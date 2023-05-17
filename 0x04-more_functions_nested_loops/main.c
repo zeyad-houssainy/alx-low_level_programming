@@ -17,9 +17,16 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
-		else if (count % 5 == 0)
+		else if ((count % 5) == 0)
 		{
-			printf("Buzz ");
+			if (count != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
 		else if (count % 3 == 0)
 		{
@@ -29,7 +36,9 @@ int main(void)
 		{
 			printf("%d ", count);
 		}
+
 	}
+	putchar('\n');
 	return (0);
 }
 
