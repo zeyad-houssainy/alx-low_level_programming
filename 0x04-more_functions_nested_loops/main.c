@@ -9,38 +9,45 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-	int count;
-
-	for (count = 1; count <= 100; count++)
-	{
-		if ((count % 3 == 0) && (count % 5 == 0))
-		{
-			printf("FizzBuzz ");
-		}
-		else if ((count % 5) == 0)
-		{
-			if (count != 100)
-			{
-				printf("Buzz ");
-			}
-			else
-			{
-				printf("Buzz");
-			}
-		}
-		else if (count % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else
-		{
-			printf("%d ", count);
-		}
-
-	}
-	putchar('\n');
-	return (0);
+    print_triangle(2);
+    //print_triangle(10);
+    //print_triangle(1);
+    //print_triangle(0);
+    return (0);
 }
 
 // Enter function here:
+void print_triangle(int size)
+{
+	int x, y, hash, space;
 
+
+
+	if (size > 0)
+	{
+		for (y = 0; y < size; y++)
+		{
+			for (x = 0; x < size; x++)
+			{
+				for (hash = 0; hash > 0; hash++)
+				{
+
+					for (space = size; space < size; space--)
+					{
+						_putchar('.');
+					}
+					_putchar('#');
+				}
+
+
+				_putchar('\n');
+
+			}
+		_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
