@@ -9,9 +9,9 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    print_triangle(2);
+    print_triangle(5);
     //print_triangle(10);
-    //print_triangle(1);
+    //print_triangle(2);
     //print_triangle(0);
     return (0);
 }
@@ -19,29 +19,26 @@ int main(void)
 // Enter function here:
 void print_triangle(int size)
 {
-	int x, y, hash, space;
+	int y, hash, space, count;
 
-
-
+	space = size - 1;
+	hash = size - space;
+	count = size - 1;
 	if (size > 0)
 	{
 		for (y = 0; y < size; y++)
 		{
-			for (x = 0; x < size; x++)
+
+			for (space = count - 1; space >= 0; space--)
 			{
-				for (hash = 0; hash > 0; hash++)
-				{
+				_putchar(' ');
+			}
+			count--;
 
-					for (space = size; space < size; space--)
-					{
-						_putchar('.');
-					}
-					_putchar('#');
-				}
+			for (hash = size - y - 1; hash < size; hash++)
+			{
 
-
-				_putchar('\n');
-
+				_putchar('#');
 			}
 		_putchar('\n');
 		}
