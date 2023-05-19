@@ -37,7 +37,7 @@ void print_rev(char *s)
 		if (*(s + count) == '\0')
 		{
 			//printf("DONE");
-			for (count; count != -1; count--)
+			for (; count != -1; count--)
 			{
 				if (*(s + count) != '\0')
 				{
