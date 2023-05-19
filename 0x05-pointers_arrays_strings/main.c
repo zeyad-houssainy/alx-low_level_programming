@@ -12,20 +12,40 @@ int main(void)
     char *str;
 
     str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    _puts(str);
+    print_rev(str);
     return (0);
 }
 
-
 // Enter function here:
-
-void _puts(char *str)
+void print_rev(char *s)
 {
-	int count;
-
-	for(count = 0; *(str + count) != '\0'; count++)
+	int count = 0;
+	int a = 1;
+/*
+	for (count = 0; *(s + count) != '\0'; count++)
 	{
-		_putchar(*(str + count));
+
+
 	}
-	_putchar('\n');
+	for (count; count != -1; count--)
+	{
+		_putchar(*(s + count));
+	}*/
+	while (a == 1)
+	{
+		//printf("number of charachters is.. %d\n", count);
+		if (*(s + count) == '\0')
+		{
+			//printf("DONE");
+			for (count; count != -1; count--)
+			{
+				if (*(s + count) != '\0')
+				{
+					_putchar(*(s + count));
+				}
+			}
+			a = 0;
+		}
+		count++;
+	}
 }
