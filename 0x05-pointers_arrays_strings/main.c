@@ -9,24 +9,23 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    int a;
-    int b;
+    char *str;
+    int len;
 
-    a = 98;
-    b = 42;
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
+    str = "My first strlen!";
+    len = _strlen(str);
+    printf("%d\n", len);
     return (0);
 }
 
 
 
 // Enter function here:
-swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-	int ptr;
-	ptr = *a;
-	*a = *b;
-	*b = ptr;
+	int count;
+	for (count = 0; *(s + count) != '\0'; count++)
+	{
+	}
+	return (count);
 }
