@@ -9,21 +9,41 @@
 
 int main(void)
 {
-	int count;
+	int count = 2;
 	int num = 20;
+	int biggest = 0;
 
-	for (count = 1; count <= 20; count++)
+
+	for (; count <= num; count++)
 	{
-		printf("%d\n", count);
-		if (num % count == 0)
+		//printf("%d....", count);
+		if ((num % count == 0) && (num == count))
 		{
-			printf("%d\n", count);
-			//num = num / count;
+			printf("final result is %d\n", num);
 		}
-		count = 0;
+		else if (num % count == 0)
+		{
+			printf("%d....prime\n", count);
+			num = num / count;
+			printf("New number is : %d\n", num);
+			count = 2;
+		}
+
+		else
+		{
+			printf("\n");
+		}
+
+		if (count > biggest)
+		{
+			biggest = count;
+		}
+
+
+
 
 
 
 	}
-
+	//printf("%d", biggest);
 }

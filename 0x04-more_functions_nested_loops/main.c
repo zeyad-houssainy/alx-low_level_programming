@@ -7,44 +7,31 @@ int _putchar(char c)
 }
 
 // Enter Code from Terminal here:
+
 int main(void)
 {
-    print_triangle(5);
-    //print_triangle(10);
-    //print_triangle(2);
-    //print_triangle(0);
-    return (0);
-}
-
-// Enter function here:
-void print_triangle(int size)
-{
-	int y, hash, space, count;
-
-	space = size - 1;
-	hash = size - space;
-	count = size - 1;
-	if (size > 0)
+	long number = 612852475143;
+	int inc;
+	while (inc++ < number / 2)
 	{
-		for (y = 0; y < size; y++)
+		if (number % inc == 0)
 		{
+			number /= 2;
+			continue;
+		}
 
-			for (space = count - 1; space >= 0; space--)
-			{
-				_putchar(' ');
-			}
-			count--;
+		for (inc = 3; inc < number / 2; inc += 2)
+		{
+			if (number % inc == 0)
+			number /= inc;
 
-			for (hash = size - y - 1; hash < size; hash++)
-			{
-
-				_putchar('#');
-			}
-		_putchar('\n');
 		}
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	printf("%ld\n", number);
+	return (0);
 }
+
+
+
+// Enter function here:
+
