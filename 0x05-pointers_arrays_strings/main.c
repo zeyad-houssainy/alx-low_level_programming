@@ -10,22 +10,22 @@ int _putchar(char c)
 int main(void)
 {
     char *str;
-    int len;
 
-    str = "My first strlen!";
-    len = _strlen(str);
-    printf("%d\n", len);
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    _puts(str);
     return (0);
 }
 
 
-
 // Enter function here:
-int _strlen(char *s)
+
+void _puts(char *str)
 {
 	int count;
-	for (count = 0; *(s + count) != '\0'; count++)
+
+	for(count = 0; *(str + count) != '\0'; count++)
 	{
+		_putchar(*(str + count));
 	}
-	return (count);
+	_putchar('\n');
 }
