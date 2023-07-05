@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int main (void)
+int main()
 {
-	int a;
-	int b;
-
-	printf(" adress for int a is ...%d\n", &a);
-	printf(" adress for int b is ...%d\n", &b);
-	a = 5;
-	b = 458;
-	printf(" adress for int a is ...%d\n", &a);
-	printf(" adress for int b is ...%d\n", &b);
+	int *ptr;
+	int a = 5;
+	printf("Original: %d\n", a);
+	ptr = &a;
+	*ptr = 10;
+	printf("Edit: %d\n", a);
+	printf("*ptr adress: %p ...\na adress: %p", ptr, &a);
 
 }
+

@@ -9,46 +9,17 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    char s[10] = "ABCD";
+    int n;
 
-    //printf("%s\n", s);
-    rev_string(s);
-    //printf("%s\n", s);
+    n = 402;
+    printf("n=%d\n", n);
+    reset_to_98(&n);
+    printf("n=%d\n", n);
     return (0);
 }
 
 // Enter function here:
-void rev_string(char *s)
+void reset_to_98(int *n)
 {
-	char *ptr;
-	int count;
-	int temp = 0;
-	printf("%s", s);
-	//to count the number of characters
-	for (count = 0; *s != '\0'; *s++, count++)
-	{
-		printf("letter %d  ... %c\n", count, *s);
-	}
-	printf("######## Total character numbers is : %d ########\n", count);
-	//create a new memory location to get the string flipped
-	ptr = s;
-	for (; count != -1; ptr++, s--, count--, temp++)
-	{
-		if (*s == '\0')
-		{
-			continue;
-		}
-		else
-		{
-			ptr[temp] = s[count];
-			printf("%c\n", ptr[temp]);
-			//printf("letter ptr is..%c , and letter s is..%c\n", *ptr, *s);
-		}
-
-		//printf("HI .. letter %c will be %c from memory location .. %p to %p\n", *s, *ptr, s, ptr);
-		//printf("Size of new location is .. %lu\n", sizeof(*ptr));
-
-	}
-	return (*ptr);
-
+	*n = 98;
 }
