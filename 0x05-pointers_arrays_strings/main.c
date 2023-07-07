@@ -21,5 +21,15 @@ int main(void)
 // Enter function here:
 int _strlen(char *s)
 {
+	int count;
+	int temp = 0;
 
+	for (count = 0; *s[count] != '\0'; count++)
+	{
+		temp++;
+		puts(*(s[0]));
+
+	}
+	return(temp);
 }
+
