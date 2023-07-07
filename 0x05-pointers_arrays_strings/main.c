@@ -11,18 +11,27 @@ int main(void)
 {
     char *str;
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    _puts(str);
+    str = "ABCD";
+    print_rev(str);
     return (0);
 }
 
 // Enter function here:
-void _puts(char *str)
+void print_rev(char *s)
 {
-	for (;*str != '\0'; str++)
+	char *ptr;
+	int temp = s - 1;
+
+	for (; *s != '\0'; s++)
+	ptr = s;
+	if (*ptr == '\0')
 	{
-		_putchar(*str);
+		ptr --;
 	}
-	_putchar(10);
+
+	do{
+		_putchar(*ptr);
+		ptr--;
+	}while(ptr != temp);
 }
 
