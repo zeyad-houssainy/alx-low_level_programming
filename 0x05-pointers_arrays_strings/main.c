@@ -19,15 +19,10 @@ int main(void)
 // Enter function here:
 void _puts(char *str)
 {
-//	char *temp;
-	int count;
-
-//	temp = str;
-	for (count = 0; *str != '\0'; str++)
+	for (;*str != '\0'; str++)
 	{
 		_putchar(*str);
 	}
-//	_putchar(*temp);
-//	_putchar(*str);
+	_putchar(10);
 }
 
