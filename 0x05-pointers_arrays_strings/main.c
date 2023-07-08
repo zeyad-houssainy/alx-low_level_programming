@@ -9,30 +9,20 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    char s[10] = "My School";
+    char *str;
 
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
+    str = "0123456789";
+    puts2(str);
     return (0);
 }
 
 // Enter function here:
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int count;
-
-	for (count = 0; *(s + count) != '\0'; count++)
+	for (int count = 0; *(str + count) != '\0';)
 	{
+		_putchar(*(str + count));
+		str += 2;
 	}
-	for (; count != -1; count--)
-	{
-		if (*(s + count) == '\0')
-		{
-			continue;
-		}
-		_putchar(*(s + count));
-	}
-	_putchar('\n');
 }
 

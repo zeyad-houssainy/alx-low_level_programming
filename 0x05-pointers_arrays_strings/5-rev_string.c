@@ -7,18 +7,22 @@
 
 void rev_string(char *s)
 {
-	int count;
+//	printf("Start..\n");
+	int count, len;
 
-	for (count = 0; *(s + count) != '\0'; count++)
+	//string length
+	for (len = 0; *(s + len) != '\0'; len++)
 	{
 	}
-	for (; count != -1; count--)
+//	printf("string length is: %d\n", len);
+	// string flip
+	char temp[len - 1];
+	for (count = 0; len != -1; count++, len--)
 	{
-		if (*(s + count) == '\0')
-		{
-			continue;
-		}
-		_putchar(*(s + count));
+		temp[count] = *(s + len);
+		puts(temp);
+
 	}
-	_putchar('\n');
+	printf("..%s..\n", temp);
+
 }
