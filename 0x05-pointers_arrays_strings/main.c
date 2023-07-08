@@ -9,15 +9,16 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    char *str;
+    char s[10] = "My School";
 
-    str = "xABCDEFGx";
-    print_rev(str);
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
     return (0);
 }
 
 // Enter function here:
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int count;
 
