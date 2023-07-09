@@ -2,7 +2,6 @@
 /**
  * puts2 - prints part of a string
  * @str: string to be printed
- *
  * Return: void
  **/
 
@@ -29,4 +28,5 @@
 			_putchar(*(str + len));
 		}
 	}
+	_putchar('\n');
 }
