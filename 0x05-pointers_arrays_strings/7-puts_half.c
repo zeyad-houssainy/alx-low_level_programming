@@ -1,23 +1,12 @@
-#include <stdio.h>
 #include "main.h"
-int _putchar(char c);
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/**
+ * puts2 - prints part of a string
+ * @str: string to be printed
+ *
+ * Return: void
+ **/
 
-// Enter Code from Terminal here:
-int main(void)
-{
-    char *str;
-
-    str = "123456789";
-    puts_half(str);
-    return (0);
-}
-
-// Enter function here:
-void puts_half(char *str)
+ void puts_half(char *str)
 {
 	int len;
 
@@ -41,4 +30,3 @@ void puts_half(char *str)
 		}
 	}
 }
-
