@@ -9,36 +9,34 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-    char *str;
+    int array[5];
 
-    str = "123456789";
-    puts_half(str);
+    array[0] = 98;
+    array[1] = 402;
+    array[2] = -198;
+    array[3] = 298;
+    array[4] = -1024;
+    print_array(array, 5);
     return (0);
 }
 
 // Enter function here:
-void puts_half(char *str)
+void print_array(int *a, int n)
 {
 	int len;
 
-	for (len = 0; *(str + len) != '\0'; len++)
+	for (len = 0; len < n; len++)
 	{
-	}
-	if (len % 2 == 0)
-	{
-		len = len / 2;
-		for (; *(str + len) != '\0'; len++)
+		if (len != n-1)
 		{
-			_putchar(*(str + len));
+			printf("%d, ", *(a+len));
 		}
-	}
-	else
-	{
-		len = (len - 1) / 2;
-		for (; *(str + len) != '\0'; len++)
+		else
 		{
-			_putchar(*(str + len));
+			printf("%d", *(a+len));
 		}
+
 	}
+
 }
 
