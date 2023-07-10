@@ -6,7 +6,7 @@
  * Return: void
  **/
 
- void print_array(int *a, int n)
+void print_array(int *a, int n)
 {
 	int len;
 
@@ -22,5 +22,5 @@
 		}
 
 	}
-	_putchar('\n');
+	_putchar(10);
 }
