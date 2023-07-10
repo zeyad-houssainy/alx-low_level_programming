@@ -21,7 +21,7 @@ int main(void)
 }
 
 // Enter function here:
-void print_array(int *a, int n)
+ void print_array(int *a, int n)
 {
 	int len;
 
@@ -37,5 +37,6 @@ void print_array(int *a, int n)
 		}
 
 	}
+	_putchar('\n');
 }
 
