@@ -9,31 +9,29 @@ int _putchar(char c)
 // Enter Code from Terminal here:
 int main(void)
 {
-	int array[5] = {
-		-198, 298, 402, -1024, 98
-	};
+    char s1[98];
+    char *ptr;
 
-	print_array(array, 5);
-	return (0);
+    ptr = _strcpy(s1, "ABCD");
+    printf("%s", s1);
+    printf("%s", ptr);
+    return (0);
 }
 
 // Enter function here:
-void print_array(int *a, int n)
+char *_strcpy(char *dest, char *src)
 {
-	int len;
+	int i;
 
-	for (len = 0; len < n; len++)
+	for(i = 0; *(src + i) != '\0'; i++)
 	{
-		if (len != n-1)
-		{
-			printf("%d, ", *(a+len));
-		}
-		else
-		{
-			printf("%d", *(a+len));
-		}
-
+		*(dest + i) = *(src + i);
 	}
-	_putchar(10);
+
+//	printf("Len is: %d\n", len); //delete
+//	*(dest + i + 1) = '\0';
+	*(dest + i) = '\0';
+	return (dest);
+
 }
 
