@@ -3,7 +3,7 @@
 *_strcat - concatenates two strings
 * @dest: buffer string
 * @src: String to be copied
-*Return : nothing
+*Return : the pointer to dest
 */
 
 char *_strcat(char *dest, char *src)
