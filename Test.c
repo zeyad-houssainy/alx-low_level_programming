@@ -1,14 +1,18 @@
 #include <stdio.h>
 
-int main()
+int print(int nb)
 {
-	int *ptr;
-	int a = 5;
-	printf("Original: %d\n", a);
-	ptr = &a;
-	*ptr = 10;
-	printf("Edit: %d\n", a);
-	printf("*ptr adress: %p ...\na adress: %p", ptr, &a);
-
+    if (nb < 0)
+    {
+        return (0);
+    }
+    printf("%d", nb + print(nb - 1));
+    nb --;
+    return (nb);
 }
 
+int main(void)
+{
+    print(4);
+    return (0);
+}

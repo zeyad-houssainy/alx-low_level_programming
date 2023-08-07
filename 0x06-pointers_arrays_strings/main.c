@@ -13,32 +13,41 @@ int main(void)
     char s2[] = "World!\n";
     char *ptr;
 
-    printf("%s\n", s1);
-    printf("%s", s2);
-    ptr = _strcat(s1, s2);
-    printf("%s", s1);
-    printf("%s", s2);
-    printf("%s", ptr);
+//    printf("%s\n", s1);
+//    printf("%s", s2);
+    ptr = _strncat(s1, s2, 1);
+//    printf("%s\n", s1);
+//    printf("%s", s2);
+//    printf("%s\n", ptr);
+    ptr = _strncat(s1, s2, 1024);
+//    printf("%s", s1);
+//    printf("%s", s2);
+//    printf("%s", ptr);
     return (0);
 }
 
 // Enter function here:
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int temp = dest;
+	int count = 0;
+	printf("OK OK");
+
 
 	for (; *dest != '\0'; dest++)
 	{
-
 	}
 	if (*dest == '\0')
 	{
 		for (; *src != '\0'; src++, dest++)
 		{
-			*dest = *src;
+			if (sizeof(*dest) <= n)
+			{
+				*dest = *src;
+			}
+
 		}
 	}
 	dest = temp;
 	return (dest);
 }
-
